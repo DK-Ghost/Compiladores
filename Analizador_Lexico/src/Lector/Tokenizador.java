@@ -123,6 +123,22 @@ public class Tokenizador {
         aux += leer();
         index -= 1; 
         aux2 += leer(); 
+        // detectar ==
+        if(aux.contentEquals("=")){
+            char next = leer();
+            if(next == '='){
+                return aux += next;
+            }
+            index -= 1;
+        }
+        //detectar <=
+        if(aux.contentEquals("<") || aux.contentEquals(">")){
+            char next = leer();
+            if(next == '='){
+                return aux += next;
+            }
+            index -= 1;
+        }
         //verificar si cumple con alguna exprecion regular
         if(!(valIden2(aux)) && !(valDig2(aux))){
             // en caso de que no, regresar el simbolo
@@ -230,12 +246,12 @@ public class Tokenizador {
        
         for (int j = 0; j < 50; j++) {
             String stg = t.token2();
-            System.out.println(stg);
+            if((stg.length() > 0) && (!stg.contentEquals(" "))){
+                System.out.println(stg);
+            }
+            
         }       
             
-        
-        String sg = "7.";
-        System.out.println(sg + " : "+ valDig(sg));
     }
 
 }

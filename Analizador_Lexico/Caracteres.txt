@@ -1,4 +1,9 @@
 int main(){
  cout<<Hola<<endln;
  int a = 14.16;
+ b == c;
+ b <= c;
+ b >= c;
+ b < c;
+ b > c;
 }
