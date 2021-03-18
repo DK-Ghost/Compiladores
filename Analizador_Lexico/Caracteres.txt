@@ -1,9 +1,5 @@
-int main(){
- cout<<Hola<<endln;
- int a = 14.16;
- b == c;
- b <= c;
- b >= c;
- b < c;
- b > c;
+inaxi main{
+ deoih a = 9.89;
+ inaxi b = 8;
+ deoih res = a + b; 
 }

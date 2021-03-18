@@ -13,8 +13,8 @@ public class Main {
     public static void main(String ag[]){
         Tokenizador t = new Tokenizador();
         
-       for (int j = 0; j < 50; j++) {
-            String stg = t.token2();
+        for (int j = 0; j < 100; j++) {
+            String stg = t.validar();
             System.out.println(stg);
         }   
     }
